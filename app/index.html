@@ -1,0 +1,48 @@
+﻿<!--<!DOCTYPE html>-->
+<html>
+
+<head>
+    <title>Hello world</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css"
+        href="styles/bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="styles/colorbox.css">
+</head>
+<body>
+
+
+    <div id="container">
+        <div id="main">
+            <div ng-view></div>
+            <form action="api/hello?" method="post">
+                <label>Name:</label>
+                <input type="text" name="Name" value="World!" />
+                <input type="submit" />
+                </form>
+</div>
+
+        <div id="sidebar">
+            <div id="sidebarInner">
+                <h2>Actions</h2>
+
+                <span class="linkIconHolder">
+                    <a tooltip href="#/" title="Go to home page">
+                        <img src="/app/images/home.png" width="64px" class="linkIcons" />
+                    </a>
+                </span>
+                <br />
+               
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script data-main="scripts/main"
+    src="scripts/vendor/require.js"></script>
+</html>

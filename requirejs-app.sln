@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "app", "app\", "{4D7AC0C0-61A1-44F1-9762-B47EA1AFBD67}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{0ec31f60-63e3-43c9-9c4d-d9ac20f67d5e}|ServiceInterface.HelloWorld.dll;{18996AC5-89C2-4369-BA54-1B382D82CD21}|HelloWorld.BusinessLogic.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/app"
+		Debug.AspNetCompiler.PhysicalPath = "app\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\app\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/app"
+		Release.AspNetCompiler.PhysicalPath = "app\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\app\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1035"
+		SlnRelativePath = "app\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.BusinessLogic", "HelloWorld.BusinessLogic\HelloWorld.BusinessLogic.csproj", "{18996AC5-89C2-4369-BA54-1B382D82CD21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.Interface", "ServiceInterface.HelloWorld\HelloWorld.Interface.csproj", "{0EC31F60-63E3-43C9-9C4D-D9AC20F67D5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D7AC0C0-61A1-44F1-9762-B47EA1AFBD67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D7AC0C0-61A1-44F1-9762-B47EA1AFBD67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D7AC0C0-61A1-44F1-9762-B47EA1AFBD67}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D7AC0C0-61A1-44F1-9762-B47EA1AFBD67}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{18996AC5-89C2-4369-BA54-1B382D82CD21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18996AC5-89C2-4369-BA54-1B382D82CD21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18996AC5-89C2-4369-BA54-1B382D82CD21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18996AC5-89C2-4369-BA54-1B382D82CD21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EC31F60-63E3-43C9-9C4D-D9AC20F67D5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC31F60-63E3-43C9-9C4D-D9AC20F67D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC31F60-63E3-43C9-9C4D-D9AC20F67D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC31F60-63E3-43C9-9C4D-D9AC20F67D5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
