@@ -10,7 +10,7 @@
         /// <summary>
         /// Initializes a new instance of your ServiceStack application, with the specified name and assembly containing the services.
         /// </summary>
-        public HelloAppHost() : base("Hello Web Services", typeof(ServiceInterface.HelloWorld.HelloService).Assembly) { }
+        public HelloAppHost() : base("Hello Web Services", typeof(ServiceInterface.HelloWorld.IHelloService).Assembly) { }
 
         /// <summary>
         /// Configure the container with the necessary routes for your ServiceStack application.

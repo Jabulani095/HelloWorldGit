@@ -8,7 +8,7 @@ using ServiceStack.OrmLite;
 
 namespace ServiceInterface.HelloWorld
 {
-    public class HelloService : Service
+    public class HelloService : Service, IHelloService
     {
 
         public object Any(Hello request)
