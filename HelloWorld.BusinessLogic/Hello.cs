@@ -29,6 +29,7 @@ namespace HelloWorld.BusinessLogic
         {
             this.ResponseStatus = new ResponseStatus();
             ResponseStatus.Message = "Jabulani Server!!";
+            
         }
        
         [DataMember]
