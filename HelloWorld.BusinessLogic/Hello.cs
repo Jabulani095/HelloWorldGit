@@ -17,12 +17,25 @@ namespace HelloWorld.BusinessLogic
 
         [DataMember]
         public DateTime TimeStamp { get; set; }
+        [DataMember]
+        public string Result { get; set; }
     }
 
     [DataContract]
-    public class HelloResponse
+    public class HelloResponse: IHasResponseStatus
     {
+
+        public HelloResponse()
+        {
+            this.ResponseStatus = new ResponseStatus();
+            ResponseStatus.Message = "Jabulani Server";
+        }
+       
         [DataMember]
-        public string Result { get; set; }
+        public Hello Hello { get; set; }
+
+         [DataMember]
+        public ResponseStatus ResponseStatus { get; set; }
+       
     }
 }

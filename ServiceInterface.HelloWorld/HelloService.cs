@@ -17,17 +17,17 @@ namespace ServiceInterface.HelloWorld
             string name = request.Name;
             if (name[0].ToString().Equals("A", StringComparison.OrdinalIgnoreCase))
             {
-                return new HelloResponse { Result = "Hello, " + name + "  Welcome Back" };
+                return new HelloResponse { Hello = new Hello{Name = name, Result = string.Format("Hello {0} Welcome Back",name),TimeStamp = DateTime.Now}};
             }
             else
             {
-                return new HelloResponse { Result = "Hello, " + name};
+                return new HelloResponse { Hello = new Hello { Name = name, Result = string.Format("Hello {0}", name), TimeStamp = DateTime.Now } };
             }
 
             }
             else
             {
-                return new HelloResponse { Result = "Hello, " + "World!" };
+                return new HelloResponse { Hello = new Hello { Name = "World!", Result = "Hello World!", TimeStamp = DateTime.Now } };
             }
         }
     }
